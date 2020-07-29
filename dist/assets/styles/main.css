@@ -5,7 +5,30 @@ body{
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
 
-a.btn.btn-custom-bg {
+
+.about {
+    max-width: 900px;
+    margin: auto;
+    line-height: 2.5;
+}
+
+.about-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin: 20px 10px;
+    grid-gap: 20px;
+    padding: 20px;
+}
+
+.about-img {
+    min-width: 150px;
+    background-image: url(../images/banku-and-Tilapia.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.btn.btn-custom-bg {
     text-decoration: none;
     color: black;
     font-size: 20px;
@@ -20,7 +43,7 @@ a.btn.btn-custom-bg {
     transition: all .5s;
 }
 
-a.btn.btn-custom-bg:hover {
+.btn.btn-custom-bg:hover {
     background: linear-gradient(90deg, rgba(253,29,29,1) 0%, rgba(131,58,180,1) 50%, rgba(252,176,69,1) 100%);
     color: white
 }
@@ -172,7 +195,7 @@ li.navbar-li {
     transition: all .2s;
 }
 
-a.link {
+.link {
     font-size: 20px;
     color: black;
     text-decoration: none;
@@ -186,6 +209,26 @@ a.link {
     border: 1px solid black;
     border-radius: 40px;
     background: #f3f1f1;
+}
+
+.button-container {
+    text-align: center;
+}
+
+.loader {
+    padding: 20px;
+    transition: all .2s;
+    border: .5px solid darkblue;
+    border-radius: 5px;
+}
+.d-none{
+    display: none;
+}
+
+.loader:hover {
+    background: lightgray;
+    border-radius: 10px;
+    border: 1px solid #929eaa;
 }
 
 .info-bar {

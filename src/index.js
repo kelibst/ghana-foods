@@ -1,13 +1,25 @@
-console.log("Working");
+import {spitNum} from './card';
+import {about} from './about';
 
-class Keli{
-    constructor(name){
-        this.name = name;
-    }
+const moreBtn = document.querySelector('.loader');
+const ul = document.querySelector('.navbar-ul');
+const content = document.getElementById('content');
 
-    sayHello(){
-        console.log(`Hello ${this.name}`) ;
-    }
-}
+moreBtn.addEventListener('click', function (e){
+  spitNum(5); 
+})
 
-new Keli("Kekeli").sayHello();
+//loads about 5 cards when the dom loads
+document.addEventListener("DOMContentLoaded", function() {
+    spitNum(5)
+    moreBtn.classList.remove('d-none');
+  });
+
+  ul.addEventListener('click', function(e){
+   if (e.target.classList.contains('aboutbtn') || e.target.parentElement.classList.contains('aboutbtn')){{
+       content.classList.remove('grid-container');
+       content.innerHTML = "";
+       moreBtn.classList.add('d-none');
+       about(1);
+   }};
+  })
