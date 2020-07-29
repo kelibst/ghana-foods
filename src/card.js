@@ -1,4 +1,4 @@
-let template = `<div class="card shadow">
+const template = `<div class="card shadow">
             <div class="card-img">
                 
             </div>
@@ -11,23 +11,23 @@ let template = `<div class="card shadow">
             </div>
             </div>`;
 
-let node = document.getElementById('content');
+const node = document.getElementById('content');
 
-//render about template when function is called
+// render about template when function is called
 
 const render = function render(template, node, container = document.createElement('div')) {
-    container.classList.add('grid');
-    container.innerHTML = template;
-    node.appendChild(container);
-  };
-  
+  container.classList.add('grid');
+  container.innerHTML = template;
+  node.appendChild(container);
+};
 
-  function spitNum(num){
-      let i =0;
-      while(i < num){
-          render(template, node);
-          i+=1;
-      }
+
+function spitNum(num) {
+  let i = 0;
+  while (i < num) {
+    render(template, node);
+    i += 1;
   }
+}
 
-  export {spitNum}
+export default spitNum;

@@ -1,4 +1,4 @@
-let template = `<div class="about-container" id="about">
+const template = `<div class="about-container" id="about">
                 <div class="about-img"></div>
                 <div class="about-content">
                 <h1 class="about-header">About Ghana Cuisine</h1>
@@ -11,23 +11,23 @@ let template = `<div class="about-container" id="about">
                     velit! Quas quidem mollitia, enim obcaecati debitis deserunt quasi aliquam error labore similique
                     dolor consequatur. Itaque fuga aliquam nulla.
                 </div>
-                </div>`
+                </div>`;
 
-let node = document.getElementById('content');
+const node = document.getElementById('content');
 
 const render = function render(template, node, container = document.createElement('div')) {
-    container.classList.add('about');
-    container.innerHTML = template;
-    node.appendChild(container);
-  };
-  
+  container.classList.add('about');
+  container.innerHTML = template;
+  node.appendChild(container);
+};
 
-  function about(num){
-      let i =0;
-      while(i < num){
-          render(template, node);
-          i+=1;
-      }
+
+function about(num) {
+  let i = 0;
+  while (i < num) {
+    render(template, node);
+    i += 1;
   }
+}
 
-  export {about};
+export default about;
