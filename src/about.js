@@ -1,6 +1,7 @@
 let template = `<div class="about-container" id="about">
                 <div class="about-img"></div>
                 <div class="about-content">
+                <h1 class="about-header">About Ghana Cuisine</h1>
                     Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti, omnis molestias. Soluta natus
                     temporibus aspernatur veniam ab voluptatum repellendus saepe delectus quia ea, veritatis inventore
                     incidunt nulla fugiat earum, aliquam doloremque animi laudantium libero doloribus id corporis ipsam

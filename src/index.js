@@ -16,10 +16,16 @@ document.addEventListener("DOMContentLoaded", function() {
   });
 
   ul.addEventListener('click', function(e){
-   if (e.target.classList.contains('aboutbtn') || e.target.parentElement.classList.contains('aboutbtn')){{
+      console.log(e.srcElement.id)
+   if (e.srcElement.id === "abt"){{
        content.classList.remove('grid-container');
        content.innerHTML = "";
        moreBtn.classList.add('d-none');
        about(1);
-   }};
+   }}else if(e.srcElement.id === "home"){
+    content.classList.add('grid-container');
+       content.innerHTML = "";
+       moreBtn.classList.remove('d-none');
+       spitNum(5);
+   };
   })

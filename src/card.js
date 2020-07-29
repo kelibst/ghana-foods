@@ -13,6 +13,8 @@ let template = `<div class="card shadow">
 
 let node = document.getElementById('content');
 
+//render about template when function is called
+
 const render = function render(template, node, container = document.createElement('div')) {
     container.classList.add('grid');
     container.innerHTML = template;
