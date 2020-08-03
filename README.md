@@ -25,6 +25,7 @@ Read more on the project specifications on [Odin](https://www.theodinproject.com
 
 - Loads Contents directly to the page using Javascript.
 - Has tabs to navigate to other parts of the page.
+- Responsive
 
 
 #  Screenshot
